@@ -25,7 +25,6 @@ DWORD WINAPI BaseLabWin::CMutexTest::producer(LPVOID pParameter)
 	srand((unsigned)time(0));
 	while (TRUE)
 	{
-		//CCRITICAL_SECTION::getInstance().lock();
 		HANDLE hCounterIn = OpenMutex(MUTEX_ALL_ACCESS, FALSE, "mutex");
 		WaitForSingleObject(hCounterIn, INFINITE);
 		if (MsgList.size() < MaxQueSize)
@@ -35,8 +34,7 @@ DWORD WINAPI BaseLabWin::CMutexTest::producer(LPVOID pParameter)
 			std::cout << "product message :" << msgtmp.head << std::endl;
 			std::cout << "pool message num£º" << MsgList.size() << std::endl;
 		}
-		//CCRITICAL_SECTION::getInstance().unlock();
-		WaitForSingleObject(hCounterIn, INFINITE);
+		ReleaseMutex(hCounterIn);
 		CloseHandle(hCounterIn);
 		Sleep(rand() % 1000);
 	}
@@ -52,7 +50,6 @@ DWORD WINAPI BaseLabWin::CMutexTest::consumer(LPVOID pParameter)
 	{
 		if (!MsgList.empty())
 		{
-			//CCRITICAL_SECTION::getInstance().lock();
 			HANDLE hCounterIn = OpenMutex(MUTEX_ALL_ACCESS, FALSE, "mutex");
 			WaitForSingleObject(hCounterIn, INFINITE);
 			if (!MsgList.empty())
@@ -62,9 +59,8 @@ DWORD WINAPI BaseLabWin::CMutexTest::consumer(LPVOID pParameter)
 				std::cout << "pool message num:" << MsgList.size() << std::endl;
 				MsgList.pop_front();
 			}
-			WaitForSingleObject(hCounterIn, INFINITE);
+			ReleaseMutex(hCounterIn);
 			CloseHandle(hCounterIn);
-			//CCRITICAL_SECTION::getInstance().unlock();
 		}
 		Sleep(rand() % 1000);
 	}
