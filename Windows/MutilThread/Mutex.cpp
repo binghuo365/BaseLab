@@ -15,7 +15,7 @@ BaseLabWin::CMutexTest::CMutexTest()
 
 BaseLabWin::CMutexTest::~CMutexTest()
 {
-
+	CloseHandle(mutex);
 }
 
 DWORD WINAPI BaseLabWin::CMutexTest::producer(LPVOID pParameter)
@@ -35,7 +35,6 @@ DWORD WINAPI BaseLabWin::CMutexTest::producer(LPVOID pParameter)
 			std::cout << "pool message num£º" << MsgList.size() << std::endl;
 		}
 		ReleaseMutex(hCounterIn);
-		CloseHandle(hCounterIn);
 		Sleep(rand() % 1000);
 	}
 
@@ -60,7 +59,6 @@ DWORD WINAPI BaseLabWin::CMutexTest::consumer(LPVOID pParameter)
 				MsgList.pop_front();
 			}
 			ReleaseMutex(hCounterIn);
-			CloseHandle(hCounterIn);
 		}
 		Sleep(rand() % 1000);
 	}
