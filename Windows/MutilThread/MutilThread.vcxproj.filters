@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="CriticalSection.cpp" />
+    <ClCompile Include="Mutex.cpp" />
+    <ClCompile Include="Semaphore.cpp" />
+    <ClCompile Include="Event.cpp" />
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PublicDef.h" />
+    <ClInclude Include="CriticalSection.h" />
+    <ClInclude Include="Mutex.h" />
+    <ClInclude Include="Semaphore.h" />
+    <ClInclude Include="Event.h" />
+  </ItemGroup>
+</Project>
