@@ -1,5 +1,5 @@
-#ifndef _SEMAPHORE_
-#define  _SEMAPHORE_
+#ifndef _SEMAPHORE_TEST_
+#define  _SEMAPHORE_TEST_
 #include "PublicDef.h"
 #include <list>
 

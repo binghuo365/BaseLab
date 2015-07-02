@@ -1,5 +1,5 @@
-#ifndef _MUTEX_
-#define _MUTEX_
+#ifndef _MUTEX_TEST_
+#define _MUTEX_TEST_
 #include <windows.h>
 #include<list>
 #include "PublicDef.h"
