@@ -18,7 +18,7 @@ namespace BaseLabWin
 	private:
 		static std::list<Msg> MsgList;
 		static int messageNum;
-		HANDLE mutex;
+		static HANDLE mutex;
 	};
 }
 

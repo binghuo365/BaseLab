@@ -7,15 +7,15 @@ using namespace BaseLabWin;
 
 std::list<Msg> CMutexTest::MsgList;
 int CMutexTest::messageNum(0);
+HANDLE CMutexTest::mutex = ::CreateMutex(NULL, FALSE, "mutex");
 
 BaseLabWin::CMutexTest::CMutexTest()
 {
-	mutex = CreateMutex(NULL, FALSE, "mutex");
+	mutex = ::CreateMutex(NULL, FALSE, "mutex");
 }
 
 BaseLabWin::CMutexTest::~CMutexTest()
 {
-	CloseHandle(mutex);
 }
 
 DWORD WINAPI BaseLabWin::CMutexTest::producer(LPVOID pParameter)
@@ -25,16 +25,15 @@ DWORD WINAPI BaseLabWin::CMutexTest::producer(LPVOID pParameter)
 	srand((unsigned)time(0));
 	while (TRUE)
 	{
-		HANDLE hCounterIn = OpenMutex(MUTEX_ALL_ACCESS, FALSE, "mutex");
-		WaitForSingleObject(hCounterIn, INFINITE);
+		WaitForSingleObject(mutex, INFINITE);
 		if (MsgList.size() < MaxQueSize)
 		{
 			msgtmp.head = ++messageNum;
 			MsgList.push_back(msgtmp);
-			std::cout << "product message :" << msgtmp.head << std::endl;
-			std::cout << "pool message num£º" << MsgList.size() << std::endl;
+			std::cout << "Mutex product message :" << msgtmp.head << std::endl;
+			std::cout << "Mutex pool message num£º" << MsgList.size() << std::endl;
 		}
-		ReleaseMutex(hCounterIn);
+		ReleaseMutex(mutex);
 		Sleep(rand() % 1000);
 	}
 
@@ -49,16 +48,15 @@ DWORD WINAPI BaseLabWin::CMutexTest::consumer(LPVOID pParameter)
 	{
 		if (!MsgList.empty())
 		{
-			HANDLE hCounterIn = OpenMutex(MUTEX_ALL_ACCESS, FALSE, "mutex");
-			WaitForSingleObject(hCounterIn, INFINITE);
+			WaitForSingleObject(mutex, INFINITE);
 			if (!MsgList.empty())
 			{
 				it = MsgList.begin();
-				std::cout << "consume message :" << it->head << std::endl;
-				std::cout << "pool message num:" << MsgList.size() << std::endl;
+				std::cout << "Mutex consume message :" << it->head << std::endl;
+				std::cout << "Mutex pool message num:" << MsgList.size() << std::endl;
 				MsgList.pop_front();
 			}
-			ReleaseMutex(hCounterIn);
+			ReleaseMutex(mutex);
 		}
 		Sleep(rand() % 1000);
 	}

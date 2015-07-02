@@ -17,7 +17,7 @@ namespace BaseLabWin
 	private:
 		static std::list<Msg> MsgList;
 		static int messageNum;
-		HANDLE hsem;
+		static HANDLE hsem;
 	};
 }
 

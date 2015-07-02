@@ -47,8 +47,8 @@ DWORD WINAPI CCRITICAL_SECTION_TEST::producer(LPVOID pParameter)
 		{
 			msgtmp.head = ++messageNum;
 			MsgList.push_back(msgtmp);
-			std::cout << "product message :" << msgtmp.head << std::endl;
-			std::cout << "pool message num£º" << MsgList.size() << std::endl;
+			std::cout << "criticalSection product message :" << msgtmp.head << std::endl;
+			std::cout << "criticalSection pool message num£º" << MsgList.size() << std::endl;
 		}
 		CCRITICAL_SECTION::getInstance().unlock();
 		Sleep(rand()%1000);
@@ -68,8 +68,8 @@ DWORD WINAPI CCRITICAL_SECTION_TEST::consumer(LPVOID pParameter)
 			if (!MsgList.empty())
 			{
 				it = MsgList.begin();
-				std::cout << "consume message :" << it->head << std::endl;
-				std::cout << "pool message num:" << MsgList.size() << std::endl;
+				std::cout << "criticalSection consume message :" << it->head << std::endl;
+				std::cout << "criticalSection pool message num:" << MsgList.size() << std::endl;
 				MsgList.pop_front();
 			}
 			CCRITICAL_SECTION::getInstance().unlock();
