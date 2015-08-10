@@ -1,6 +1,5 @@
 CC = gcc
 CFLAGS = -O2 -fPIC -Wall
-AR = ar rc
 
 BUILD = build
 
@@ -10,7 +9,11 @@ LIBSRCS = *.cpp
 
 BUILD_O = $(BUILD)/o
 
-all : test
+objects = main.o
+
+main :  $(objects) CC CFLAGS main $(objects)
+
+$(objects) : main.h
 
 clean :
 	rm -rf $(BUILD)
