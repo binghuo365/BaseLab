@@ -6,7 +6,7 @@ BUILD = build
 
 .PHONY : all clean
 
-LIBSRCS = *.cpp
+LIBSRCS = *.cpp, *.c
 
 BUILD_O = $(BUILD)/o
 
