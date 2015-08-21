@@ -1,0 +1,4 @@
+workspace (AIO_TEST) {
+   ./tests  
+}
+

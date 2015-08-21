@@ -1,0 +1,31 @@
+project(PAUL Test) : aiotests {
+  exename      = PAUL_Test
+  Source_Files {
+    ./../common/Cfg.cpp
+    ./../common/TaskPool.cpp
+    ./../common/ProactorTask.cpp
+    PSession.cpp
+    PAUL_Test.cpp
+    Test_Acceptor.cpp
+    Test_Connector.cpp
+    Test_Service_Handler.cpp
+    Test_Queue.cpp
+  }
+
+  Template_Files {
+    ./../common/Asynch_RW.cpp 
+  } 
+  Header_Files {
+    ./../common/Cfg.h
+    ./../common/TaskPool.h
+    ./../common/ProactorTask.h
+    PSession.h
+    Test_Acceptor.h
+    Test_Connector.h
+    Test_Service_Handler.h
+    Test_Queue.h
+  }
+}
+
+
+

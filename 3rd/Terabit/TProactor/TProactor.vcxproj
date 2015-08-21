@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0E0D7092-FECA-1BAD-3FA6-8A6697E66F3E}</ProjectGuid>
+    <SccProjectName />
+    <SccLocalPath />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\lib\</OutDir>
+    <IntDir>Debug\TProactor\I386\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\lib\</OutDir>
+    <IntDir>Release\TProactor\I386\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..;$(ACE_ROOT);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>TPROACTOR_BUILD_DLL;_DEBUG;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <ProgramDataBaseFileName>Debug\TProactor\I386/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ACEd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)TProactord.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>.;..\lib;$(ACE_ROOT)\lib;$(ACE_ROOT)\ace;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)TProactord.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <ImportLibrary>..\lib\TProactord.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..;$(ACE_ROOT);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..;$(ACE_ROOT);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>TPROACTOR_BUILD_DLL;NDEBUG;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ACE.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)TProactor.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>.;..\lib;$(ACE_ROOT)\lib;$(ACE_ROOT)\ace;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>..\lib\TProactor.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..;$(ACE_ROOT);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Asynch_Acceptor2.cpp" />
+    <ClCompile Include="Asynch_Connector2.cpp" />
+    <ClCompile Include="Asynch_File_Transmitter.cpp" />
+    <ClCompile Include="Asynch_IO.cpp" />
+    <ClCompile Include="Asynch_IO_Impl.cpp" />
+    <ClCompile Include="POSIX_AIO_Config.cpp" />
+    <ClCompile Include="POSIX_AIO_Dev_Poll_Provider.cpp" />
+    <ClCompile Include="POSIX_AIO_Dispatcher.cpp" />
+    <ClCompile Include="POSIX_AIO_Emulation.cpp" />
+    <ClCompile Include="POSIX_AIO_Emulation_Provider.cpp" />
+    <ClCompile Include="POSIX_AIO_Event_Poll_Provider.cpp" />
+    <ClCompile Include="POSIX_AIO_FD_Info.cpp" />
+    <ClCompile Include="POSIX_AIO_LINUX_NAIO_Provider.cpp" />
+    <ClCompile Include="POSIX_AIO_Poll_Provider.cpp" />
+    <ClCompile Include="POSIX_AIO_Processor.cpp" />
+    <ClCompile Include="POSIX_AIO_Provider.cpp" />
+    <ClCompile Include="POSIX_AIO_Select_Provider.cpp" />
+    <ClCompile Include="POSIX_AIO_STD_Provider.cpp" />
+    <ClCompile Include="POSIX_AIO_SUN_Port_Provider.cpp" />
+    <ClCompile Include="POSIX_AIO_SUN_Provider.cpp" />
+    <ClCompile Include="POSIX_Asynch_IO.cpp" />
+    <ClCompile Include="POSIX_Proactor.cpp" />
+    <ClCompile Include="Proactor.cpp" />
+    <ClCompile Include="Proactor_Impl.cpp" />
+    <ClCompile Include="WIN32_Asynch_IO.cpp" />
+    <ClCompile Include="WIN32_Proactor.cpp" />
+    <ClCompile Include="Asynch_Acceptor.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Asynch_Allocator_T.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Asynch_Connector.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Asynch_Acceptor.h" />
+    <ClInclude Include="Asynch_Acceptor2.h" />
+    <ClInclude Include="Asynch_Allocator_T.h" />
+    <ClInclude Include="Asynch_Connector.h" />
+    <ClInclude Include="Asynch_Connector2.h" />
+    <ClInclude Include="Asynch_File_Transmitter.h" />
+    <ClInclude Include="Asynch_IO.h" />
+    <ClInclude Include="Asynch_IO_Impl.h" />
+    <ClInclude Include="Double_List_T.h" />
+    <ClInclude Include="Monitor_T.h" />
+    <ClInclude Include="POSIX_AIO_Config.h" />
+    <ClInclude Include="POSIX_AIO_Dev_Poll_Provider.h" />
+    <ClInclude Include="POSIX_AIO_Dispatcher.h" />
+    <ClInclude Include="POSIX_AIO_Emulation.h" />
+    <ClInclude Include="POSIX_AIO_Emulation_Provider.h" />
+    <ClInclude Include="POSIX_AIO_Event_Poll_Provider.h" />
+    <ClInclude Include="POSIX_AIO_FD_Info.h" />
+    <ClInclude Include="POSIX_AIO_LINUX_NAIO_Provider.h" />
+    <ClInclude Include="POSIX_AIO_Poll_Provider.h" />
+    <ClInclude Include="POSIX_AIO_Processor.h" />
+    <ClInclude Include="POSIX_AIO_Provider.h" />
+    <ClInclude Include="POSIX_AIO_Select_Provider.h" />
+    <ClInclude Include="POSIX_AIO_STD_Provider.h" />
+    <ClInclude Include="POSIX_AIO_SUN_Port_Provider.h" />
+    <ClInclude Include="POSIX_AIO_SUN_Provider.h" />
+    <ClInclude Include="POSIX_Asynch_IO.h" />
+    <ClInclude Include="POSIX_CB_Proactor.h" />
+    <ClInclude Include="POSIX_Proactor.h" />
+    <ClInclude Include="Proactor.h" />
+    <ClInclude Include="Proactor_Impl.h" />
+    <ClInclude Include="Single_List_T.h" />
+    <ClInclude Include="SUN_Proactor.h" />
+    <ClInclude Include="TPROACTOR_Export.h" />
+    <ClInclude Include="WIN32_Asynch_IO.h" />
+    <ClInclude Include="WIN32_Proactor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Asynch_IO.inl" />
+    <None Include="POSIX_Asynch_IO.inl" />
+    <None Include="POSIX_Proactor.inl" />
+    <None Include="Proactor.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

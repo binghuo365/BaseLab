@@ -1,0 +1,4 @@
+project: aiodefaults {
+    install = /cygdrive/e/OpenSource/Terabit2_561.4/Terabit/Test_Directory/bin
+}
+

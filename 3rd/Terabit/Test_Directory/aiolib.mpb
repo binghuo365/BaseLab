@@ -1,0 +1,5 @@
+project: aiodefaults {
+    libout       = /cygdrive/e/OpenSource/Terabit2_561.4/Terabit/Test_Directory/lib
+    dllout       = /cygdrive/e/OpenSource/Terabit2_561.4/Terabit/Test_Directory/lib
+}
+
