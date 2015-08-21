@@ -1,0 +1,36 @@
+﻿生成启动时间为 2015-8-21 15:47:21。
+     1>项目“F:\MyGitSource\BaseLab\3rd\ACE-5.7.0\ACE_wrappers\ACEXML\apps\svcconf\ACEXML_XML_Svc_Conf_Parser_vc8.vcxproj”在节点 2 上(Build 个目标)。
+     1>PrepareForBuild:
+         正在创建目录“Release\ACEXML_XML_Svc_Conf_Parser_vc8\I386\ACEXML_X.3D8365B5.tlog\”。
+       InitializeBuildStatus:
+         正在创建“Release\ACEXML_XML_Svc_Conf_Parser_vc8\I386\ACEXML_X.3D8365B5.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\..\.. /I..\..\..\ACEXML\common /Zi /nologo /W3 /WX- /O2 /Oy- /D NDEBUG /D WIN32 /D _WINDOWS /D _CRT_NONSTDC_NO_WARNINGS /D _CRT_SECURE_NO_WARNINGS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _WINDLL /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Release\ACEXML_XML_Svc_Conf_Parser_vc8\I386\\" /Fd"Release\ACEXML_XML_Svc_Conf_Parser_vc8\I386\vc120.pdb" /Gd /TP /wd4355 /analyze- /errorReport:prompt Svcconf.cpp Svcconf_Handler.cpp
+         {{xgTaskID=00000167}}
+         Svcconf.cpp
+     1>F:\MyGitSource\BaseLab\3rd\ACE-5.7.0\ACE_wrappers\ace/OS_NS_stdio.inl(1028): warning C4996: 'vswprintf': swprintf has been changed to conform with the ISO C standard, adding an extra character count parameter. To use traditional Microsoft swprintf, set _CRT_NON_CONFORMING_SWPRINTFS.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\swprintf.inl(97) : 参见“vswprintf”的声明
+         {{xgTaskID=00000000}}
+         {{xgTaskID=00000168}}
+         Svcconf_Handler.cpp
+     1>F:\MyGitSource\BaseLab\3rd\ACE-5.7.0\ACE_wrappers\ace/OS_NS_stdio.inl(1028): warning C4996: 'vswprintf': swprintf has been changed to conform with the ISO C standard, adding an extra character count parameter. To use traditional Microsoft swprintf, set _CRT_NON_CONFORMING_SWPRINTFS.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\swprintf.inl(97) : 参见“vswprintf”的声明
+         {{xgTaskID=00000000}}
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\..\lib\ACEXML_XML_Svc_Conf_Parser.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:. /LIBPATH:..\..\..\lib ACE.lib ACEXML.lib ACEXML_Parser.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\..\..\lib\ACEXML_XML_Svc_Conf_Parser.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\..\lib\ACEXML_XML_Svc_Conf_Parser.lib" /MACHINE:X86 /SAFESEH /DLL Release\ACEXML_XML_Svc_Conf_Parser_vc8\I386\Svcconf.obj
+         Release\ACEXML_XML_Svc_Conf_Parser_vc8\I386\Svcconf_Handler.obj
+         "F:\MyGitSource\BaseLab\3rd\ACE-5.7.0\ACE_wrappers\lib\ACE.lib"
+         "F:\MyGitSource\BaseLab\3rd\ACE-5.7.0\ACE_wrappers\lib\ACEXML.lib"
+         "F:\MyGitSource\BaseLab\3rd\ACE-5.7.0\ACE_wrappers\lib\ACEXML_Parser.lib"
+         {{xgTaskID=00000169}}
+         
+         {{xgTaskID=00000000}}
+         ACEXML_XML_Svc_Conf_Parser_vc8.vcxproj -> F:\MyGitSource\BaseLab\3rd\ACE-5.7.0\ACE_wrappers\ACEXML\apps\svcconf\..\..\..\lib\ACEXML_XML_Svc_Conf_Parser.dll
+       FinalizeBuildStatus:
+         正在删除文件“Release\ACEXML_XML_Svc_Conf_Parser_vc8\I386\ACEXML_X.3D8365B5.tlog\unsuccessfulbuild”。
+         正在对“Release\ACEXML_XML_Svc_Conf_Parser_vc8\I386\ACEXML_X.3D8365B5.tlog\ACEXML_XML_Svc_Conf_Parser.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“F:\MyGitSource\BaseLab\3rd\ACE-5.7.0\ACE_wrappers\ACEXML\apps\svcconf\ACEXML_XML_Svc_Conf_Parser_vc8.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.05

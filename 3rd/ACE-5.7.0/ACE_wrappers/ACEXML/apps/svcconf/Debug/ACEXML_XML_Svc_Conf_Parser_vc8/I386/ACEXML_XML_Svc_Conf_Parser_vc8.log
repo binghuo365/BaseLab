@@ -1,0 +1,32 @@
+﻿生成启动时间为 2015-8-21 15:45:26。
+     1>项目“F:\MyGitSource\BaseLab\3rd\ACE-5.7.0\ACE_wrappers\ACEXML\apps\svcconf\ACEXML_XML_Svc_Conf_Parser_vc8.vcxproj”在节点 2 上(Build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\ACEXML_XML_Svc_Conf_Parser_vc8\I386\ACEXML_X.3D8365B5.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\..\.. /I..\..\..\ACEXML\common /Zi /nologo /W3 /WX- /Od /Oy- /D _DEBUG /D WIN32 /D _WINDOWS /D _CRT_NONSTDC_NO_WARNINGS /D _CRT_SECURE_NO_WARNINGS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D "MPC_LIB_MODIFIER=\"d\"" /D _WINDLL /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Debug\ACEXML_XML_Svc_Conf_Parser_vc8\I386\\" /Fd"Debug\ACEXML_XML_Svc_Conf_Parser_vc8\I386\vc120.pdb" /Gd /TP /wd4355 /analyze- /errorReport:prompt Svcconf.cpp Svcconf_Handler.cpp
+         {{xgTaskID=00000168}}
+         Svcconf_Handler.cpp
+         {{xgTaskID=00000000}}
+         {{xgTaskID=00000167}}
+         Svcconf.cpp
+         {{xgTaskID=00000000}}
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1186,5): warning MSB8012: TargetPath(F:\MyGitSource\BaseLab\3rd\ACE-5.7.0\ACE_wrappers\ACEXML\apps\svcconf\..\..\..\lib\ACEXML_XML_Svc_Conf_Parser.dll) does not match the Linker's OutputFile property value (F:\MyGitSource\BaseLab\3rd\ACE-5.7.0\ACE_wrappers\lib\ACEXML_XML_Svc_Conf_Parserd.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1188,5): warning MSB8012: TargetName(ACEXML_XML_Svc_Conf_Parser) does not match the Linker's OutputFile property value (ACEXML_XML_Svc_Conf_Parserd). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\..\lib\ACEXML_XML_Svc_Conf_Parserd.dll" /INCREMENTAL /NOLOGO /LIBPATH:. /LIBPATH:..\..\..\lib ACEd.lib ACEXMLd.lib ACEXML_Parserd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\..\..\lib\ACEXML_XML_Svc_Conf_Parser.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\..\lib\ACEXML_XML_Svc_Conf_Parserd.lib" /MACHINE:X86 /SAFESEH /DLL Debug\ACEXML_XML_Svc_Conf_Parser_vc8\I386\Svcconf.obj
+         Debug\ACEXML_XML_Svc_Conf_Parser_vc8\I386\Svcconf_Handler.obj
+         "F:\MyGitSource\BaseLab\3rd\ACE-5.7.0\ACE_wrappers\lib\ACEd.lib"
+         "F:\MyGitSource\BaseLab\3rd\ACE-5.7.0\ACE_wrappers\lib\ACEXMLd.lib"
+         "F:\MyGitSource\BaseLab\3rd\ACE-5.7.0\ACE_wrappers\lib\ACEXML_Parserd.lib"
+         {{xgTaskID=00000169}}
+         
+         {{xgTaskID=00000000}}
+         ACEXML_XML_Svc_Conf_Parser_vc8.vcxproj -> F:\MyGitSource\BaseLab\3rd\ACE-5.7.0\ACE_wrappers\ACEXML\apps\svcconf\..\..\..\lib\ACEXML_XML_Svc_Conf_Parser.dll
+       FinalizeBuildStatus:
+         正在删除文件“Debug\ACEXML_XML_Svc_Conf_Parser_vc8\I386\ACEXML_X.3D8365B5.tlog\unsuccessfulbuild”。
+         正在对“Debug\ACEXML_XML_Svc_Conf_Parser_vc8\I386\ACEXML_X.3D8365B5.tlog\ACEXML_XML_Svc_Conf_Parser.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“F:\MyGitSource\BaseLab\3rd\ACE-5.7.0\ACE_wrappers\ACEXML\apps\svcconf\ACEXML_XML_Svc_Conf_Parser_vc8.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.07
