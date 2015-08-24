@@ -1,4 +1,6 @@
 #include "ServerHandler.h"
+#include <iostream>
+#include <string>
 
 using namespace BaseLabWin::ACELab;
 
@@ -14,7 +16,8 @@ int ServerHandler::handle_input(ACE_HANDLE fd /*= ACE_INVALID_HANDLE*/)
 		printf("Connection close\n");
 		return -1;
 	}
-
+	std::string str(buffer);
+	std::cout << str << std::endl;
 	this->peer().send(buffer, recv_cnt);
 	return 0;
 }
