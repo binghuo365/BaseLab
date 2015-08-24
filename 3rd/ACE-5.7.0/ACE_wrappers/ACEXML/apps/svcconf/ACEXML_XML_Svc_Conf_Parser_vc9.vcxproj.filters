@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{dbb01d5d-06e8-4f27-ab2c-4417a0bffda5}</UniqueIdentifier>
+      <Extensions>cpp;cxx;cc;C;c</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{75131126-9023-4b5a-b86b-e36cbd0d1225}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hh</Extensions>
+    </Filter>
+    <Filter Include="Build Files">
+      <UniqueIdentifier>{cee9eaf7-a7f9-4732-9c4e-490eff0ed942}</UniqueIdentifier>
+      <Extensions>mpc;mpb;mwc</Extensions>
+    </Filter>
+    <Filter Include="Inline Files">
+      <UniqueIdentifier>{430f6676-bd63-449f-a53e-0d90504e5524}</UniqueIdentifier>
+      <Extensions>i;inl</Extensions>
+    </Filter>
+    <Filter Include="Documentation">
+      <UniqueIdentifier>{d7c3f65d-008c-4f79-9300-d5820e9677b8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Svcconf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Svcconf_Handler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Svcconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Svcconf_Handler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="svcconf.mpc">
+      <Filter>Build Files</Filter>
+    </None>
+    <None Include="Svcconf_Handler.inl">
+      <Filter>Inline Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="README">
+      <Filter>Documentation</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

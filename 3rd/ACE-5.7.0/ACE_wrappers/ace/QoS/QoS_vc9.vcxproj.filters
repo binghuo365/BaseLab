@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{a10714c2-1a65-40d1-b266-8d0c7719bc65}</UniqueIdentifier>
+      <Extensions>cpp;cxx;cc;C;c</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{232bbc22-521b-4aca-bc40-6f90c1aaa21d}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hh</Extensions>
+    </Filter>
+    <Filter Include="Build Files">
+      <UniqueIdentifier>{15e6d385-8967-4eab-a86b-9a768e95db16}</UniqueIdentifier>
+      <Extensions>mpc;mpb;mwc</Extensions>
+    </Filter>
+    <Filter Include="Pkgconfig Files">
+      <UniqueIdentifier>{703a96bd-d565-404b-9081-d501be46c4f5}</UniqueIdentifier>
+      <Extensions>in</Extensions>
+    </Filter>
+    <Filter Include="Inline Files">
+      <UniqueIdentifier>{420446ae-7e79-491c-9894-bd412a009a99}</UniqueIdentifier>
+      <Extensions>i;inl</Extensions>
+    </Filter>
+    <Filter Include="Documentation">
+      <UniqueIdentifier>{8a54a7d2-ddd3-4bee-baaa-11c469bce04c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="QoS_Decorator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QoS_Manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QoS_Session_Factory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QoS_Session_Impl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SOCK_Dgram_Mcast_QoS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ACE_QoS_Export.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QoS_Decorator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QoS_Manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QoS_Session.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QoS_Session_Factory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QoS_Session_Impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SOCK_Dgram_Mcast_QoS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="qos.mpc">
+      <Filter>Build Files</Filter>
+    </None>
+    <None Include="ACE_QoS.pc.in">
+      <Filter>Pkgconfig Files</Filter>
+    </None>
+    <None Include="QoS_Session_Impl.inl">
+      <Filter>Inline Files</Filter>
+    </None>
+    <None Include="SOCK_Dgram_Mcast_QoS.inl">
+      <Filter>Inline Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="README">
+      <Filter>Documentation</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

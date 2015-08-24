@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{12390213-5630-41a7-99fa-434f98bb367a}</UniqueIdentifier>
+      <Extensions>cpp;cxx;cc;C;c</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{18e8808d-fe77-47e5-abfa-db08183d82da}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hh</Extensions>
+    </Filter>
+    <Filter Include="Build Files">
+      <UniqueIdentifier>{11738744-9302-448d-b8b8-495a771664c0}</UniqueIdentifier>
+      <Extensions>mpc;mpb;mwc</Extensions>
+    </Filter>
+    <Filter Include="Pkgconfig Files">
+      <UniqueIdentifier>{5f0d0d7d-7a9b-4a3e-aac7-c0c3f569d18c}</UniqueIdentifier>
+      <Extensions>in</Extensions>
+    </Filter>
+    <Filter Include="Inline Files">
+      <UniqueIdentifier>{bbfe4117-524e-4e09-95fd-d6de7f427227}</UniqueIdentifier>
+      <Extensions>i;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ETCL_Constraint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ETCL_Constraint_Visitor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ace_etcl_export.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ETCL_Constraint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ETCL_Constraint_Visitor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ETCL.mpc">
+      <Filter>Build Files</Filter>
+    </None>
+    <None Include="ACE_ETCL.pc.in">
+      <Filter>Pkgconfig Files</Filter>
+    </None>
+    <None Include="ETCL_Constraint.inl">
+      <Filter>Inline Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

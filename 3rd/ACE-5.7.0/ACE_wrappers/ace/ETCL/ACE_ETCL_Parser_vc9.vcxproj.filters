@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{a2e7fb25-9a23-4a1b-83bf-ec4ab0146d9b}</UniqueIdentifier>
+      <Extensions>cpp;cxx;cc;C;c</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{e7e46d36-4c64-4cbc-9700-5d3697a7cee4}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hh</Extensions>
+    </Filter>
+    <Filter Include="Build Files">
+      <UniqueIdentifier>{129bd2a6-5ed0-4250-8169-8673e4270c89}</UniqueIdentifier>
+      <Extensions>mpc;mpb;mwc</Extensions>
+    </Filter>
+    <Filter Include="Pkgconfig Files">
+      <UniqueIdentifier>{c2eabb99-8d07-47a6-a6e0-e04202148ba2}</UniqueIdentifier>
+      <Extensions>in</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ETCL_Interpreter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ETCL_l.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ETCL_y.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ETCL_Interpreter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="etcl_parser_export.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ETCL_y.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ETCL.mpc">
+      <Filter>Build Files</Filter>
+    </None>
+    <None Include="ACE_ETCL_Parser.pc.in">
+      <Filter>Pkgconfig Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

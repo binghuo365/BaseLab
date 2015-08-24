@@ -4,7 +4,7 @@
 #include "ace/Svc_Handler.h"
 #include "ace/SOCK_Stream.h"	
 
-namespace BaseLab
+namespace BaseLabWin
 {
 	namespace ACELab
 	{
