@@ -2,6 +2,8 @@
 #include "ClientHandler.h"
 #include "ace/Connector.h"
 
+using namespace BaseLabWin::ACELab;
+
 int main(int argc, char* argv[])
 {
 	ACE_INET_Addr port_to_connect(9999, ACE_LOCALHOST);
