@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReactorClient", "ACELab\Rea
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReactorServer", "ACELab\ReactorServer\ReactorServer.vcxproj", "{5E24FA69-B72E-4F30-96E0-64DE5DB00FE8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProactorServer", "ACELab\ProactorServer\ProactorServer.vcxproj", "{855FE75F-26A1-4955-8D04-5E3A10109ACD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -31,6 +33,10 @@ Global
 		{5E24FA69-B72E-4F30-96E0-64DE5DB00FE8}.Debug|Win32.Build.0 = Debug|Win32
 		{5E24FA69-B72E-4F30-96E0-64DE5DB00FE8}.Release|Win32.ActiveCfg = Release|Win32
 		{5E24FA69-B72E-4F30-96E0-64DE5DB00FE8}.Release|Win32.Build.0 = Release|Win32
+		{855FE75F-26A1-4955-8D04-5E3A10109ACD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{855FE75F-26A1-4955-8D04-5E3A10109ACD}.Debug|Win32.Build.0 = Debug|Win32
+		{855FE75F-26A1-4955-8D04-5E3A10109ACD}.Release|Win32.ActiveCfg = Release|Win32
+		{855FE75F-26A1-4955-8D04-5E3A10109ACD}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,5 +44,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D31E4429-DB0F-4910-933F-1831EBAB5350} = {11EDEC76-6C58-4131-B192-4B3D93C547C4}
 		{5E24FA69-B72E-4F30-96E0-64DE5DB00FE8} = {11EDEC76-6C58-4131-B192-4B3D93C547C4}
+		{855FE75F-26A1-4955-8D04-5E3A10109ACD} = {11EDEC76-6C58-4131-B192-4B3D93C547C4}
 	EndGlobalSection
 EndGlobal
