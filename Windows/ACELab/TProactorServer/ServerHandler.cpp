@@ -17,15 +17,6 @@ void ServerHandler::open(ACE_HANDLE new_handle, ACE_Message_Block &)
 		ACE_DEBUG((LM_DEBUG, ACE_TEXT("[%T](%P|%t) Connection from %s\n"), peer_name));
 	}
 
-	ACE_Message_Block *mb;
-	ACE_NEW_NORETURN(mb, ACE_Message_Block(MAX_MSG_SIZE));
-	if (this->reader_.read(*mb, mb->space()) != 0)
-	{
-		ACE_ERROR((LM_ERROR, ACE_TEXT("[%T](%P|%t) Asynch Read Failed.")));
-		mb->release();
-		delete this;
-		return;
-	}
 }
 
 void ServerHandler::handle_read_stream(const TRB_Asynch_Read_Stream::Result &result)
