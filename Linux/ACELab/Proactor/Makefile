@@ -1,23 +1,8 @@
-
-MAKEFILE	:=
-
-TARGET		:= test
-
-NVERSION	:= 1
-
-INCLUDES	:= -I. -I.. 
-
-
-LIBS		:= -lACE 
-
-CFLAGS		:= $(CFLAGS_PASS)
-DCFLAGS		:= $(DCFLAGS_PASS)
-LDFLAGS		:= $(LDFLAGS_PASS)
-DLDFLAGS	:= $(DLDFLAGS_PASS)
-
-
-CC		:= cc
-CXX		:= c++
-CPP		:= cpp
-LD		:= $(CC) 
-
+main : main.o HA_Proactive_Service.o
+	cc -o main main.o HA_Proactive_Service.o
+main.o : main.cpp HA_Proactive_Service.h HA_Proactive_Acceptor.h
+	cc -c main.cpp
+HA_Proactive_Service.o : HA_Proactive_Service.cpp
+	cc -c HA_Proactive_Service.cpp
+clean :
+	rm main *.o 

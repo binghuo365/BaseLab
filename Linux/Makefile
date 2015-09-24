@@ -1,24 +1,15 @@
-CC = gcc
-CFLAGS = -O2 -fPIC -Wall
-AR = ar rc
+CC = g++
+CFLAGS = -fPIC -lACE
 
-BUILD = build
+all : main
 
-.PHONY : all clean
-
-LIBSRCS = *.cpp, *.c
-
-BUILD_O = $(BUILD)/o
-
-all : test
+main : main.o
+	$(CC) -o $(CFLAGS) main.cpp
+main.o : main.cpp
+	$(CC) -c $(CFLAGS) main.cpp
 
 clean :
-	rm -rf $(BUILD)
-
-$(BUILD) : $(BUILD_O)
-
-$(BUILD_O) :
-	mkdir -p $@
+	rm -rf *.o *.a *.out
 
 .PHONY : all clean
 
