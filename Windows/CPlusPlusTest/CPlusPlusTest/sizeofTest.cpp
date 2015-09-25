@@ -11,4 +11,6 @@ void runTest()
 	std::cout << "class c4 sizeof size :" << sizeof(c4) << std::endl;
 	std::cout << "class c5 sizeof size :" << sizeof(c5) << std::endl;
 	std::cout << "class c6 sizeof size :" << sizeof(c6) << std::endl;
+	std::cout << "class c7 sizeof size :" << sizeof(c7) << std::endl;
+	std::cout << "class c8 sizeof size :" << sizeof(c8) << std::endl;
 }

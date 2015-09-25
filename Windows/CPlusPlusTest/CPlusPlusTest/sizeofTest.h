@@ -58,5 +58,16 @@ class c6
 
 };
 
+class c7
+{
+public:
+	virtual void print2();
+};
+
+class c8
+	: public c4, c7
+{
+
+};
 
 void runTest();
