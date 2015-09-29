@@ -1,3 +1,5 @@
+#ifndef _SIZEOT_TEST_
+#define _SIZEOT_TEST_
 struct s1
 {
 	bool a;
@@ -71,3 +73,5 @@ class c8
 };
 
 void runTest();
+
+#endif

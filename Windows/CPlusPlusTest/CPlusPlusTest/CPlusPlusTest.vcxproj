@@ -66,9 +66,11 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="sizeofTest.cpp" />
+    <ClCompile Include="virtualFunction.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sizeofTest.h" />
+    <ClInclude Include="virtualFunction.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

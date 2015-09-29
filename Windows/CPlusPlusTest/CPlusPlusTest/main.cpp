@@ -1,10 +1,13 @@
 #include <iostream>
 #include "sizeofTest.h"
+#include "virtualFunction.h"
 
 int main()
 {
 	//sizeofTest
-	runTest();
+	//runTest();
 
+	//VirtualFunction Test
+	runVirtualFunctionTest();
 	system("pause");
 }

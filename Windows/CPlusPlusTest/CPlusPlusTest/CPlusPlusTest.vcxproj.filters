@@ -3,8 +3,10 @@
   <ItemGroup>
     <ClCompile Include="sizeofTest.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="virtualFunction.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sizeofTest.h" />
+    <ClInclude Include="virtualFunction.h" />
   </ItemGroup>
 </Project>
