@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="stub">
+      <UniqueIdentifier>{0d597d73-bcb9-4214-962b-7349fc3e27cc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="print.cpp">
+      <Filter>stub</Filter>
+    </ClCompile>
+    <ClCompile Include="PrintI.h" />
+    <ClCompile Include="PrintI.cpp" />
+    <ClCompile Include="Server.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="print.h">
+      <Filter>stub</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
