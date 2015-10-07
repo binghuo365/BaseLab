@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="net">
+      <UniqueIdentifier>{a11d5bc5-a699-4985-b08b-4044606ceca3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="net\FileAPI.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\Packet.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\ServerSocket.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\Socket.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\SocketAPI.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\SocketInputStream.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\SocketOutputStream.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="net\FileAPI.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\Packet.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\ServerSocket.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\Socket.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\SocketAPI.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\SocketInputStream.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\SocketOutputStream.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="common\BaseType.h">
+      <Filter>net</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
