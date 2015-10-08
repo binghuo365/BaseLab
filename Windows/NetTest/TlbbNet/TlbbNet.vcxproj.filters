@@ -4,6 +4,9 @@
     <Filter Include="net">
       <UniqueIdentifier>{a11d5bc5-a699-4985-b08b-4044606ceca3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="player">
+      <UniqueIdentifier>{f170002f-264d-4277-84d7-9e06b9d93188}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="net\FileAPI.cpp">
@@ -25,6 +28,35 @@
       <Filter>net</Filter>
     </ClCompile>
     <ClCompile Include="net\SocketOutputStream.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="player\LoginPlayer.cpp">
+      <Filter>player</Filter>
+    </ClCompile>
+    <ClCompile Include="player\LoginPlayerManager.cpp">
+      <Filter>player</Filter>
+    </ClCompile>
+    <ClCompile Include="player\Player.cpp">
+      <Filter>player</Filter>
+    </ClCompile>
+    <ClCompile Include="player\PlayerManager.cpp">
+      <Filter>player</Filter>
+    </ClCompile>
+    <ClCompile Include="player\PlayerPool.cpp">
+      <Filter>player</Filter>
+    </ClCompile>
+    <ClCompile Include="player\ServerPlayer.cpp">
+      <Filter>player</Filter>
+    </ClCompile>
+    <ClCompile Include="player\TurnPlayerQueue.cpp">
+      <Filter>player</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectManager.cpp" />
+    <ClCompile Include="LoginMain.cpp" />
+    <ClCompile Include="net\Thread.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\Lock.cpp">
       <Filter>net</Filter>
     </ClCompile>
   </ItemGroup>
@@ -51,6 +83,38 @@
       <Filter>net</Filter>
     </ClInclude>
     <ClInclude Include="common\BaseType.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="player\LoginPlayer.h">
+      <Filter>player</Filter>
+    </ClInclude>
+    <ClInclude Include="player\LoginPlayerManager.h">
+      <Filter>player</Filter>
+    </ClInclude>
+    <ClInclude Include="player\Player.h">
+      <Filter>player</Filter>
+    </ClInclude>
+    <ClInclude Include="player\PlayerManager.h">
+      <Filter>player</Filter>
+    </ClInclude>
+    <ClInclude Include="player\PlayerPool.h">
+      <Filter>player</Filter>
+    </ClInclude>
+    <ClInclude Include="player\ServerPlayer.h">
+      <Filter>player</Filter>
+    </ClInclude>
+    <ClInclude Include="player\TurnPlayerQueue.h">
+      <Filter>player</Filter>
+    </ClInclude>
+    <ClInclude Include="net\Type.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="ConnectManager.h" />
+    <ClInclude Include="LoginMain.h" />
+    <ClInclude Include="net\Thread.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\Lock.h">
       <Filter>net</Filter>
     </ClInclude>
   </ItemGroup>

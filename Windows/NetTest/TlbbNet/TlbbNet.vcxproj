@@ -43,7 +43,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>__WINDOWS__;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
@@ -65,23 +65,46 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ConnectManager.cpp" />
+    <ClCompile Include="LoginMain.cpp" />
     <ClCompile Include="net\FileAPI.cpp" />
+    <ClCompile Include="net\Lock.cpp" />
     <ClCompile Include="net\Packet.cpp" />
     <ClCompile Include="net\ServerSocket.cpp" />
     <ClCompile Include="net\Socket.cpp" />
     <ClCompile Include="net\SocketAPI.cpp" />
     <ClCompile Include="net\SocketInputStream.cpp" />
     <ClCompile Include="net\SocketOutputStream.cpp" />
+    <ClCompile Include="net\Thread.cpp" />
+    <ClCompile Include="player\LoginPlayer.cpp" />
+    <ClCompile Include="player\LoginPlayerManager.cpp" />
+    <ClCompile Include="player\Player.cpp" />
+    <ClCompile Include="player\PlayerManager.cpp" />
+    <ClCompile Include="player\PlayerPool.cpp" />
+    <ClCompile Include="player\ServerPlayer.cpp" />
+    <ClCompile Include="player\TurnPlayerQueue.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="common\BaseType.h" />
+    <ClInclude Include="ConnectManager.h" />
+    <ClInclude Include="LoginMain.h" />
     <ClInclude Include="net\FileAPI.h" />
+    <ClInclude Include="net\Lock.h" />
     <ClInclude Include="net\Packet.h" />
     <ClInclude Include="net\ServerSocket.h" />
     <ClInclude Include="net\Socket.h" />
     <ClInclude Include="net\SocketAPI.h" />
     <ClInclude Include="net\SocketInputStream.h" />
     <ClInclude Include="net\SocketOutputStream.h" />
+    <ClInclude Include="net\Thread.h" />
+    <ClInclude Include="net\Type.h" />
+    <ClInclude Include="player\LoginPlayer.h" />
+    <ClInclude Include="player\LoginPlayerManager.h" />
+    <ClInclude Include="player\Player.h" />
+    <ClInclude Include="player\PlayerManager.h" />
+    <ClInclude Include="player\PlayerPool.h" />
+    <ClInclude Include="player\ServerPlayer.h" />
+    <ClInclude Include="player\TurnPlayerQueue.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
