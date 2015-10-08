@@ -7,6 +7,9 @@
     <Filter Include="player">
       <UniqueIdentifier>{f170002f-264d-4277-84d7-9e06b9d93188}</UniqueIdentifier>
     </Filter>
+    <Filter Include="packet">
+      <UniqueIdentifier>{b111931b-e8a6-4d25-8c35-388bdd5fb09c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="net\FileAPI.cpp">
@@ -58,6 +61,11 @@
     </ClCompile>
     <ClCompile Include="net\Lock.cpp">
       <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayerManager.cpp" />
+    <ClCompile Include="packet\PacketFactoryManager.cpp">
+      <Filter>packet</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -116,6 +124,17 @@
     </ClInclude>
     <ClInclude Include="net\Lock.h">
       <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayerManager.h" />
+    <ClInclude Include="packet\PacketDefine.h">
+      <Filter>packet</Filter>
+    </ClInclude>
+    <ClInclude Include="packet\PacketFactory.h">
+      <Filter>packet</Filter>
+    </ClInclude>
+    <ClInclude Include="packet\PacketFactoryManager.h">
+      <Filter>packet</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
