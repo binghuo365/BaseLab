@@ -38,7 +38,7 @@ public :
 	uint		m_nPlayers ;
 };
 
-
+extern PlayerManager* g_pPlayerManager;
 
 
 #endif

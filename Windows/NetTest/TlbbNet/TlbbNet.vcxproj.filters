@@ -67,6 +67,7 @@
     <ClCompile Include="packet\PacketFactoryManager.cpp">
       <Filter>packet</Filter>
     </ClCompile>
+    <ClCompile Include="PlayerPool.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="net\FileAPI.h">
@@ -136,5 +137,6 @@
     <ClInclude Include="packet\PacketFactoryManager.h">
       <Filter>packet</Filter>
     </ClInclude>
+    <ClInclude Include="PlayerPool.h" />
   </ItemGroup>
 </Project>

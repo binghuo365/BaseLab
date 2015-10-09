@@ -2,6 +2,8 @@
 #include "PlayerManager.h"
 #include "Player.h"
 
+PlayerManager* g_pPlayerManager = NULL;
+
 PlayerManager::PlayerManager( )
 {
 	m_nPlayers = 0 ;

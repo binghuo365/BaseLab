@@ -65,17 +65,17 @@ public :
 
 	virtual BOOL	SendPacket( Packet* pPacket ) ;
 
-	virtual VOID	Encrypt_SC(CHAR* header, UINT uLen, UINT uBeginPlace)=0;
+	virtual VOID	Encrypt_SC(CHAR* header, UINT uLen, UINT uBeginPlace);
 
-	virtual VOID	DecryptHead_CS(CHAR* header)=0;
+	virtual VOID	DecryptHead_CS(CHAR* header);
 
-	virtual VOID	Decrypt_CS(CHAR* header, UINT uLen, UINT uBeginPlace)=0;
+	virtual VOID	Decrypt_CS(CHAR* header, UINT uLen, UINT uBeginPlace);
 
 public :
 	//通用接口
 
-	virtual BOOL	IsLoginPlayer( )=0 ;
-	virtual BOOL	IsServerPlayer( )=0 ;
+	virtual BOOL	IsLoginPlayer( );
+	virtual BOOL	IsServerPlayer( ) ;
 	//用于网通电信互联，判断是不是使用代理服务器的用户和使用哪个代理服务器的用户
 	//INT				WhereThisPlayerFrom(VOID) const;
 

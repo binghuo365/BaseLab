@@ -355,10 +355,36 @@ BOOL Player::SendPacket( Packet* pPacket )
 			}
 		}
 		//消息加密处理--End
-
 	}
 
 	return TRUE ;
 
+}
+
+VOID Player::Encrypt_SC(CHAR* header, UINT uLen, UINT uBeginPlace)
+{
+	//todo
+}
+
+VOID Player::DecryptHead_CS(CHAR* header)
+{
+	//todo
+}
+
+VOID Player::Decrypt_CS(CHAR* header, UINT uLen, UINT uBeginPlace)
+{
+	//todo
+}
+
+BOOL Player::IsLoginPlayer()
+{
+	return TRUE;
+	//todo
+}
+
+BOOL Player::IsServerPlayer()
+{
+	return TRUE;
+	//todo
 }
 

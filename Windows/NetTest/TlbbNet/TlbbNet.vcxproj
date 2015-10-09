@@ -79,6 +79,7 @@
     <ClCompile Include="packet\PacketFactoryManager.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PlayerManager.cpp" />
+    <ClCompile Include="PlayerPool.cpp" />
     <ClCompile Include="player\LoginPlayer.cpp" />
     <ClCompile Include="player\LoginPlayerManager.cpp" />
     <ClCompile Include="player\Player.cpp" />
@@ -106,6 +107,7 @@
     <ClInclude Include="packet\PacketFactoryManager.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="PlayerManager.h" />
+    <ClInclude Include="PlayerPool.h" />
     <ClInclude Include="player\LoginPlayer.h" />
     <ClInclude Include="player\LoginPlayerManager.h" />
     <ClInclude Include="player\Player.h" />
