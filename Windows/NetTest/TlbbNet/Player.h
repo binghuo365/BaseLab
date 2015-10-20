@@ -58,7 +58,9 @@ public :
 	~Player( ) ;
 
 	virtual BOOL	ProcessInput( ) ;
+
 	virtual BOOL	ProcessOutput( ) ;
+
 	virtual BOOL	ProcessCommand( BOOL Option = TRUE ) ;
 
 	virtual BOOL	HeartBeat( UINT uTime=0 ) ;
