@@ -1,6 +1,7 @@
 #include <iostream>
 #include "sizeofTest.h"
 #include "virtualFunction.h"
+#include "throwTest.h"
 
 int main()
 {
@@ -8,6 +9,10 @@ int main()
 	//runTest();
 
 	//VirtualFunction Test
-	runVirtualFunctionTest();
+	//runVirtualFunctionTest();
+
+	throwTest test;
+	runThrowTest();
+
 	system("pause");
 }

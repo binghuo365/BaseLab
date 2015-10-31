@@ -4,9 +4,11 @@
     <ClCompile Include="sizeofTest.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="virtualFunction.cpp" />
+    <ClCompile Include="throwTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sizeofTest.h" />
     <ClInclude Include="virtualFunction.h" />
+    <ClInclude Include="throwTest.h" />
   </ItemGroup>
 </Project>
