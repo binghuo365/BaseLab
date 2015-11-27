@@ -61,10 +61,10 @@ public :
 	virtual BOOL		CheckPacket( ){ return TRUE ; }
 
 	BYTE				GetPacketIndex( ) const { return m_Index ; } ;
-	VOID				SetPacketIndex( BYTE Index ){ m_Index = Index ; } ;
+	VOID			SetPacketIndex( BYTE Index ){ m_Index = Index ; } ;
 
 	BYTE				GetPacketStatus( ) const { return m_Status ; } ;
-	VOID				SetPacketStatus( BYTE Status ){ m_Status = Status ; } ;
+	VOID			SetPacketStatus( BYTE Status ){ m_Status = Status ; } ;
 };
 
 

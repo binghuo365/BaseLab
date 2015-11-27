@@ -29,16 +29,15 @@ public :
 	uint				GetPlayerNumber( ){ return m_nPlayers ; } ;
 	BOOL				HasPlayer( ){ return (BOOL)m_nPlayers ; } ;
 
-	//
 	enum
 	{
 		MAX_PLAYER = 10000,
 	};
+
 	PlayerID_t	m_pPlayers[MAX_PLAYER];
 	uint		m_nPlayers ;
 };
 
 extern PlayerManager* g_pPlayerManager;
-
 
 #endif

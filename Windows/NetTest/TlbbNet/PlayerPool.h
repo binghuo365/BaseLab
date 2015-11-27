@@ -1,5 +1,3 @@
-
-
 #ifndef __PLAYERPOOL_H__
 #define __PLAYERPOOL_H__
 
@@ -8,7 +6,6 @@
 #include "Player.h"
 
 //分配玩家数据的数据池
-//
 
 class PlayerPool
 {
@@ -21,10 +18,6 @@ public :
 	//初始化数据池
 	BOOL				Init( uint MaxPlayerCount = 10000 ) ;
 	
-	//取得ShareMem的初始化
-	//BOOL				PostInit();
-
-
 	//根据玩家的PlayerID取得数据指针
 	Player*			GetPlayer( PlayerID_t PlayerID )
 	{
@@ -40,20 +33,14 @@ public :
 	VOID				DelPlayer( PlayerID_t PlayerID ) ;
 
 private :
-	Player*		m_pPlayer;
+	Player*		    m_pPlayer;
 	uint				m_Position ;
 
-	MyLock				m_Lock ;
+	MyLock			m_Lock ;
 	uint				m_PlayerCount ;
-
 	uint				m_MaxPlayerCount ;
 
-
-	
 	VOID				SetPosition(uint pos);
-
-
-
 };
 
 

@@ -13,17 +13,13 @@
 class PacketFactoryManager 
 {
 public :
-	
 	PacketFactoryManager( ) ;
-	
 	~PacketFactoryManager( ) ;
 
 private :
 	VOID				AddFactory( PacketFactory* pFactory ) ;
 	
 public :
-	//外部调用通用接口
-
 	//初始化接口
 	BOOL				Init( ) ;
 	//根据消息类型从内存里分配消息实体数据（允许多线程同时调用）
@@ -37,16 +33,12 @@ public :
 	VOID				Unlock( ){ m_Lock.Unlock() ; } ;
 
 private :
-	
 	PacketFactory **	m_Factories ;
-	
 	USHORT				m_Size ;
-
 	MyLock				m_Lock ;
 
 public :
 	UINT*				m_pPacketAllocCount ;
-
 };
 
 extern PacketFactoryManager* g_pPacketFactoryManager ;

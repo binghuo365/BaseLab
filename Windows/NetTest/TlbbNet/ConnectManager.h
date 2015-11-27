@@ -60,25 +60,19 @@ public:
 	BOOL				RemovePlayer(Player* pPlayer);
 	VOID				RemoveAllPlayer();
 
-	//*********
-	//*********
 	//此接口支持数据同步，即可以在不同线程内调用
 	//此接口是异步通讯的唯一接口
 	//注意：pPacket消息需要用g_pPacketFactoryManager创建出来，用完后不能删除
-	BOOL				SendPacket(Packet* pPacket,
-		PlayerID_t PlayerID,
-		uint Flag = PF_NONE);
-	//*********
-	//*********
+	BOOL				SendPacket(Packet* pPacket, PlayerID_t PlayerID, 	uint Flag = PF_NONE);
 
 private:
 	//用于侦听的服务器Socket
 	ServerSocket*		m_pServerSocket;
+
 	//用于侦听的服务器SOCKET句柄值（此数据即m_pServerSocket内拥有的SOCKET句柄值）
 	SOCKET				m_SocketID;
+	BOOL			        m_Active;//是否活动的标志
 
-	BOOL			m_Active;//是否活动的标志
-	//
 	//网络相关数据
 	enum{
 		SELECT_BAK = 0,	//当前系统中拥有的完整句柄数据
@@ -95,11 +89,7 @@ private:
 	SOCKET		m_MaxFD;
 
 	INT						m_nFDSize;
-	//网络相关数据
-	//
-
 	MyLock					m_Lock;
-
 
 	//当前的消息缓存
 	ASYNC_PACKET*			m_PacketQue;
@@ -109,7 +99,6 @@ private:
 
 public:
 	TID			m_ThreadID;
-
 };
 
 extern ConnectManager* g_pConnectManager ;

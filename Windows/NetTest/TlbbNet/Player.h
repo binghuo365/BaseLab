@@ -1,8 +1,6 @@
 //
 // Player 是指已经通过网络连接进入服务器端程序的客户
 //
-//
-//
 
 #ifndef __PLAYER_H__
 #define __PLAYER_H__
@@ -146,8 +144,5 @@ protected :
 
 	BYTE					m_PacketIndex ;
 };
-
-//CHAR* ProxyTool_GetCorrespondingIP(Player const* pPlayer, ID_t ServerID);
-//UINT  ProxyTool_GetCorrespondingPort(Player const* pPlayer, ID_t ServerID);
 
 #endif
