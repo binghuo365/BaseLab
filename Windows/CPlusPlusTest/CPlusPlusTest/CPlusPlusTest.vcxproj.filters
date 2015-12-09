@@ -5,10 +5,12 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="virtualFunction.cpp" />
     <ClCompile Include="throwTest.cpp" />
+    <ClCompile Include="overFlowTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sizeofTest.h" />
     <ClInclude Include="virtualFunction.h" />
     <ClInclude Include="throwTest.h" />
+    <ClInclude Include="overFlowTest.h" />
   </ItemGroup>
 </Project>

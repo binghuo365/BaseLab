@@ -423,3 +423,8 @@ EXCEPTION:
 
 	return FALSE;
 }
+
+BOOL ConnectManager::HeartBeat()
+{
+	return TRUE;
+}

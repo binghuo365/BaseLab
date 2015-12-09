@@ -65,11 +65,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="overFlowTest.cpp" />
     <ClCompile Include="sizeofTest.cpp" />
     <ClCompile Include="throwTest.cpp" />
     <ClCompile Include="virtualFunction.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="overFlowTest.h" />
     <ClInclude Include="sizeofTest.h" />
     <ClInclude Include="throwTest.h" />
     <ClInclude Include="virtualFunction.h" />

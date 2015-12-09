@@ -80,13 +80,6 @@
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PlayerManager.cpp" />
     <ClCompile Include="PlayerPool.cpp" />
-    <ClCompile Include="player\LoginPlayer.cpp" />
-    <ClCompile Include="player\LoginPlayerManager.cpp" />
-    <ClCompile Include="player\Player.cpp" />
-    <ClCompile Include="player\PlayerManager.cpp" />
-    <ClCompile Include="player\PlayerPool.cpp" />
-    <ClCompile Include="player\ServerPlayer.cpp" />
-    <ClCompile Include="player\TurnPlayerQueue.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="common\BaseType.h" />
@@ -108,13 +101,6 @@
     <ClInclude Include="Player.h" />
     <ClInclude Include="PlayerManager.h" />
     <ClInclude Include="PlayerPool.h" />
-    <ClInclude Include="player\LoginPlayer.h" />
-    <ClInclude Include="player\LoginPlayerManager.h" />
-    <ClInclude Include="player\Player.h" />
-    <ClInclude Include="player\PlayerManager.h" />
-    <ClInclude Include="player\PlayerPool.h" />
-    <ClInclude Include="player\ServerPlayer.h" />
-    <ClInclude Include="player\TurnPlayerQueue.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

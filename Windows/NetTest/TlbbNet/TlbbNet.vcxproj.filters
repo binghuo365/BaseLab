@@ -33,27 +33,6 @@
     <ClCompile Include="net\SocketOutputStream.cpp">
       <Filter>net</Filter>
     </ClCompile>
-    <ClCompile Include="player\LoginPlayer.cpp">
-      <Filter>player</Filter>
-    </ClCompile>
-    <ClCompile Include="player\LoginPlayerManager.cpp">
-      <Filter>player</Filter>
-    </ClCompile>
-    <ClCompile Include="player\Player.cpp">
-      <Filter>player</Filter>
-    </ClCompile>
-    <ClCompile Include="player\PlayerManager.cpp">
-      <Filter>player</Filter>
-    </ClCompile>
-    <ClCompile Include="player\PlayerPool.cpp">
-      <Filter>player</Filter>
-    </ClCompile>
-    <ClCompile Include="player\ServerPlayer.cpp">
-      <Filter>player</Filter>
-    </ClCompile>
-    <ClCompile Include="player\TurnPlayerQueue.cpp">
-      <Filter>player</Filter>
-    </ClCompile>
     <ClCompile Include="ConnectManager.cpp" />
     <ClCompile Include="LoginMain.cpp" />
     <ClCompile Include="net\Thread.cpp">
@@ -93,27 +72,6 @@
     </ClInclude>
     <ClInclude Include="common\BaseType.h">
       <Filter>net</Filter>
-    </ClInclude>
-    <ClInclude Include="player\LoginPlayer.h">
-      <Filter>player</Filter>
-    </ClInclude>
-    <ClInclude Include="player\LoginPlayerManager.h">
-      <Filter>player</Filter>
-    </ClInclude>
-    <ClInclude Include="player\Player.h">
-      <Filter>player</Filter>
-    </ClInclude>
-    <ClInclude Include="player\PlayerManager.h">
-      <Filter>player</Filter>
-    </ClInclude>
-    <ClInclude Include="player\PlayerPool.h">
-      <Filter>player</Filter>
-    </ClInclude>
-    <ClInclude Include="player\ServerPlayer.h">
-      <Filter>player</Filter>
-    </ClInclude>
-    <ClInclude Include="player\TurnPlayerQueue.h">
-      <Filter>player</Filter>
     </ClInclude>
     <ClInclude Include="net\Type.h">
       <Filter>net</Filter>
