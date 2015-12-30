@@ -26,7 +26,7 @@ namespace CDENET
 		/**
 		* set send and close
 		*/
-		virtual void close(const int& interval) = 0;
+		virtual void close(const int interval) = 0;
 
 		/**
 		* to send and close

@@ -2,6 +2,7 @@
 #define _CDF_NET_ADDRESS_H_
 
 #include <string>
+#include "ace/INET_Addr.h"
 
 namespace CDENET
 {

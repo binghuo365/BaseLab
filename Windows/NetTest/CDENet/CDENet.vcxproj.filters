@@ -7,6 +7,7 @@
     <ClCompile Include="acetrbnetacceptorimpl.cpp" />
     <ClCompile Include="netconnection.cpp" />
     <ClCompile Include="netconnectionimpl.cpp" />
+    <ClCompile Include="acetrbnetconnectionimpl.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="netaddress.h" />
@@ -15,5 +16,6 @@
     <ClInclude Include="acetrbnetacceptorimpl.h" />
     <ClInclude Include="netconnection.h" />
     <ClInclude Include="netconnectionimpl.h" />
+    <ClInclude Include="acetrbnetconnectionimpl.h" />
   </ItemGroup>
 </Project>

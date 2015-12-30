@@ -44,11 +44,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(ACE_ROOT);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ACE_ROOT);F:\MyGitSource\BaseLab\3rd\Terabit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ACE_ROOT)/lib;F:\MyGitSource\BaseLab\3rd\Terabit\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ACEd.lib;TProactord.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -67,6 +69,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="acetrbnetacceptorimpl.cpp" />
+    <ClCompile Include="acetrbnetconnectionimpl.cpp" />
     <ClCompile Include="netacceptor.cpp" />
     <ClCompile Include="netacceptorimpl.cpp" />
     <ClCompile Include="netaddress.cpp" />
@@ -75,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="acetrbnetacceptorimpl.h" />
+    <ClInclude Include="acetrbnetconnectionimpl.h" />
     <ClInclude Include="netacceptor.h" />
     <ClInclude Include="netacceptorimpl.h" />
     <ClInclude Include="netaddress.h" />
