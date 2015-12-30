@@ -33,7 +33,7 @@ CACETrbNetConnectionImpl *CACETrbNetConnectorImpl::make_handler(void)
 		return NULL;
 	}
 	CACETrbNetConnectionImpl* connImpl = new CACETrbNetConnectionImpl();
-	INetConnection* conn;
+	INetConnection* conn = NULL;
 	if (!connector->onMakeHandler(connImpl, conn))
 	{
 		return NULL;
