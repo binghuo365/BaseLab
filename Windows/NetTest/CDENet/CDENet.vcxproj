@@ -78,6 +78,7 @@
     <ClCompile Include="netconnectionimpl.cpp" />
     <ClCompile Include="netconnector.cpp" />
     <ClCompile Include="netconnectorimpl.cpp" />
+    <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="acetrbnetacceptorimpl.h" />

@@ -11,6 +11,7 @@
     <ClCompile Include="netconnector.cpp" />
     <ClCompile Include="netconnectorimpl.cpp" />
     <ClCompile Include="acetrbnetconnectorimpl.cpp" />
+    <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="netaddress.h" />
