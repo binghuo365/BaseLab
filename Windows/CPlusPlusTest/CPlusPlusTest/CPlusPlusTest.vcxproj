@@ -64,6 +64,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="const_castTest.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="overFlowTest.cpp" />
     <ClCompile Include="sizeofTest.cpp" />
@@ -71,6 +72,7 @@
     <ClCompile Include="virtualFunction.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="const_castTest.h" />
     <ClInclude Include="overFlowTest.h" />
     <ClInclude Include="sizeofTest.h" />
     <ClInclude Include="throwTest.h" />

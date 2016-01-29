@@ -3,6 +3,9 @@
 #include "virtualFunction.h"
 #include "throwTest.h"
 #include "overFlowTest.h"
+#include "const_castTest.h"
+
+void test(const int& a);
 
 int main()
 {
@@ -15,7 +18,9 @@ int main()
 	//throwTest test;
 	//runThrowTest();
 
-	runOverFloweTest();
+	//runOverFloweTest();
+
+	runConstCastTest();
 
 	system("pause");
 }
