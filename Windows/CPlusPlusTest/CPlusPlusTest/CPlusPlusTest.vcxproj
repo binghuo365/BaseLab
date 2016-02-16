@@ -68,6 +68,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="overFlowTest.cpp" />
     <ClCompile Include="sizeofTest.cpp" />
+    <ClCompile Include="stlMapTest.cpp" />
     <ClCompile Include="throwTest.cpp" />
     <ClCompile Include="virtualFunction.cpp" />
   </ItemGroup>
@@ -75,6 +76,7 @@
     <ClInclude Include="const_castTest.h" />
     <ClInclude Include="overFlowTest.h" />
     <ClInclude Include="sizeofTest.h" />
+    <ClInclude Include="stlMapTest.h" />
     <ClInclude Include="throwTest.h" />
     <ClInclude Include="virtualFunction.h" />
   </ItemGroup>

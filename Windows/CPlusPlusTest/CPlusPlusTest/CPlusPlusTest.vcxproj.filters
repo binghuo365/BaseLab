@@ -7,6 +7,7 @@
     <ClCompile Include="throwTest.cpp" />
     <ClCompile Include="overFlowTest.cpp" />
     <ClCompile Include="const_castTest.cpp" />
+    <ClCompile Include="stlMapTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sizeofTest.h" />
@@ -14,5 +15,6 @@
     <ClInclude Include="throwTest.h" />
     <ClInclude Include="overFlowTest.h" />
     <ClInclude Include="const_castTest.h" />
+    <ClInclude Include="stlMapTest.h" />
   </ItemGroup>
 </Project>

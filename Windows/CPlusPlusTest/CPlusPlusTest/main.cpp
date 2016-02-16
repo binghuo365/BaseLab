@@ -4,6 +4,7 @@
 #include "throwTest.h"
 #include "overFlowTest.h"
 #include "const_castTest.h"
+#include "stlMapTest.h"
 
 void test(const int& a);
 
@@ -20,7 +21,9 @@ int main()
 
 	//runOverFloweTest();
 
-	runConstCastTest();
+	//runConstCastTest();
+
+	runStlMapTest();
 
 	system("pause");
 }
